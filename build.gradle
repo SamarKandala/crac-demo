@@ -1,0 +1,23 @@
+plugins {
+    id 'application' 
+}
+
+repositories {
+    mavenCentral() 
+}
+
+dependencies {
+
+}
+
+application {
+    mainClass = 'demo.Executor' 
+}
+
+jar {
+  manifest {
+    attributes(
+      'Main-Class': 'main.java.demo.Executor'
+    )
+  }
+}

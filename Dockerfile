@@ -13,6 +13,6 @@ RUN tar --extract --file $JAVA_HOME/openjdk.tar.gz --directory "$JAVA_HOME" --st
 RUN mkdir -p /opt/crac-files
 
 
-COPY ./build/libs/crac-test.jar /opt/app/crac4-17.0.0.jar
+COPY ./build/libs/crac4.jar /opt/app/crac4-17.0.0.jar
 
 CMD ["/bin/bash"]
